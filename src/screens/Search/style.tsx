@@ -1,0 +1,74 @@
+import { StyleSheet } from "react-native";
+import theme from "../../theme/GlobalTheme";
+
+const styles = StyleSheet.create({
+    container:{
+        flex:1,
+        width:'100%',
+        alignItems:'center',
+    },
+    header:{
+        height:125,
+        width:'100%',
+        alignItems:'center'
+    },
+    searchContainer:{
+        marginTop:'5%',
+        flexDirection:'row',
+        alignItems:'center',
+        borderWidth:1,
+        borderColor:theme.colors.green,
+        width:'90%',
+        borderRadius:10,
+        padding:'1%',
+        justifyContent:'center',
+        height:45,
+    },
+    findIcon:{
+        height:20,
+        width:20,
+    },
+    input:{
+        width:'85%',
+        paddingLeft:'5%',
+        fontSize:12,
+        fontFamily:'OpenSans-SemiBold',
+        color:theme.colors.green
+    },
+    recentContainer:{
+        flex:1,
+        width:'100%',
+        alignItems:'center',
+    },
+    recentSearch:{
+        width:'90%',
+        padding:'2%',
+        fontSize:12,
+        fontFamily:'OpenSans-Regular',
+        color: theme.colors.grey,
+    },
+    recentTextContainer:{
+        flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between',
+        width:'88%',
+        borderWidth:1,
+        height:45,
+        paddingLeft:'4%',
+        borderTopColor:theme.colors.lightgrey,
+        borderBottomColor:theme.colors.lightgrey,
+        borderLeftColor:theme.colors.lightgrey,
+        borderRightColor:theme.colors.lightgrey,
+    },
+    cross:{
+        height:8,
+        width:8
+    },
+    recentText:{ 
+        width:'90%',
+        color:theme.colors.grey,
+        fontSize:12,
+        fontFamily:'OpenSans-Regular'
+    }
+})
+export default styles;
